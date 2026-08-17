@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Producto {
 
      String nombre;
@@ -34,43 +32,15 @@ public class Producto {
 
      public static void main(String[] args) {
 
-         Scanner teclado = new Scanner(System.in);
-
-         System.out.println("Ingrese el nombre del producto:");
-         String nombre = teclado.nextLine();
-
-         System.out.println("Ingrese el precio del producto:");
-         double precio = teclado.nextDouble();
-
-         teclado.nextLine();
-
-         Producto producto = new Producto(nombre,precio);
+         Producto producto = new Producto("Galleta Diversión", 2800);
          producto.MostrarProducto();
 
-         //Producto 2;
+         Producto producto1 = new Producto("Salsa Molto", 900);
+         producto1.MostrarProducto();
 
-         System.out.println("Ingrese el nombre del producto:");
-         nombre = teclado.nextLine();
-
-         System.out.println("Ingrese el precio del producto:");
-         precio = teclado.nextDouble();
-
-         teclado.nextLine();
-
-         Producto producto2 = new Producto(nombre,precio);
+         Producto producto2 = new Producto("Polvoritas", 600);
          producto2.MostrarProducto();
 
-         //producto 3 ;
-
-         System.out.println("Ingrese el nombre del producto:");
-         nombre = teclado.nextLine();
-
-         System.out.println("Ingrese el precio del producto:");
-         precio = teclado.nextDouble();
-
-         Producto producto3 = new Producto(nombre,precio);
-         producto3.MostrarProducto();
-
-
      }
+     
 }
